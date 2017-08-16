@@ -1,0 +1,208 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1729966482106654}
+  m_IsPrefabParent: 1
+--- !u!1 &1729966482106654
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4325653394366954}
+  - component: {fileID: 114029845125745282}
+  - component: {fileID: 114513882150115550}
+  - component: {fileID: 114348150948133580}
+  - component: {fileID: 114791372332840736}
+  - component: {fileID: 114666733834067048}
+  - component: {fileID: 114011455473600566}
+  - component: {fileID: 114097218975296690}
+  - component: {fileID: 114215695308823020}
+  m_Layer: 0
+  m_Name: _GameManager
+  m_TagString: GameController
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4325653394366954
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1729966482106654}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114011455473600566
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1729966482106654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4c6ea18988f29847ad2ecfa4a93af32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioObj: {fileID: 0}
+  audioLevelDefault: 0.5
+  pauseMenu: {fileID: 0}
+  currentScene: level01
+  mainMenuScene: mainMenu
+--- !u!114 &114029845125745282
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1729966482106654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8565277c22a5e4b40a4bdf5b8960882a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  noBuildZoneScript: {fileID: 0}
+  _playerCurrency: {fileID: 0}
+  tower01: {fileID: 1661793488094082, guid: e1263f183749e204a8140b83115204cd, type: 2}
+  tower02: {fileID: 1724331045649184, guid: 132f1daba6872314fb18f15dc39c4420, type: 2}
+  tower03: {fileID: 1186425096147130, guid: 22363a535632cd64b8d8c80f3f0aa0b4, type: 2}
+  tower01_NAME: 'l33t Turret '
+  tower02_NAME: Sentry Turret
+  tower03_NAME: Long Range Turret
+  tower01_cost: 15
+  tower02_cost: 20
+  tower03_cost: 35
+  tower01_cost_Text: {fileID: 0}
+  tower02_cost_Text: {fileID: 0}
+  tower03_cost_Text: {fileID: 0}
+  cooldownText: {fileID: 0}
+  canSpawnHere: 0
+--- !u!114 &114097218975296690
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1729966482106654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8950334926c37674eacdb448061344b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _spawnTower: {fileID: 114029845125745282}
+  playerOne: {fileID: 0}
+  playerTwo: {fileID: 0}
+  playerOneShoot: {fileID: 0}
+  playerTwoShoot: {fileID: 0}
+  _camera: {fileID: 0}
+  xOffSet: 0
+  yOffSet: 7
+  zOffSet: -12
+--- !u!114 &114215695308823020
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1729966482106654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de517c1571d45544982fd5998616318a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityObj: {fileID: 1676152322238614, guid: 6e6cbf6af46c12540916ae39a9abd30a, type: 2}
+  spawnLocation: {fileID: 0}
+  cooldownText: {fileID: 0}
+  cooldownMax: 50
+  cooldown: 0
+  amountToCast: 25
+  Max_xOffset: 25
+  Max_yOffset: 15
+  Max_zOffset: 8
+  Min_xOffset: -15
+  Min_yOffset: 8
+  Min_zOffset: -10
+--- !u!114 &114348150948133580
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1729966482106654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35ca9b408f4ae2c40b1eee1ee1d11748, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinAmountText: {fileID: 0}
+  startingAmount: 50
+  currentAmount: 0
+--- !u!114 &114513882150115550
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1729966482106654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fe51f51af2c43d4b9cb00a9077f71a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainMenu: mainMenu
+  totalWaves: 10
+  numEnemiesToSpawn: 5
+  ememiesDeadThisWave: 0
+  enemyWaveIncrease: 1
+  enemiesKilled: 0
+  enemies:
+  - {fileID: 1305544527842162, guid: dc60537ec48caaf48a245903bc3935ae, type: 2}
+  - {fileID: 1008847546152752, guid: da0b940b240413a44909e5d6daaac71b, type: 2}
+  waveText: {fileID: 0}
+  enemyNumCount: {fileID: 0}
+  startButton: {fileID: 0}
+  playerWonMenu: {fileID: 0}
+  playerUI: {fileID: 0}
+--- !u!114 &114666733834067048
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1729966482106654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2eb4610f8f76e0341976e914a9860096, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cheatsEnabled: 0
+  toggleButton: {fileID: 0}
+  cheatsMenu: {fileID: 0}
+  moneyAddValue: 50
+  _playerCurrency: {fileID: 0}
+  _townStats: {fileID: 0}
+  _playerSpecialAbility: {fileID: 0}
+--- !u!114 &114791372332840736
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1729966482106654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 088018ce968fd6f4bbc0be43f8dc9315, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  endGameMenu: {fileID: 0}
+  gameplayAudio: {fileID: 0}
+  mainMenu: level01
+  currentScene: level01
